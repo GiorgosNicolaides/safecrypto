@@ -1,0 +1,187 @@
+/* Wrapper για το night-sky */
+.space-background {
+  background: black;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  color: yellow;
+  font-family: 'Arial Black', sans-serif;
+}
+
+/* Κοινά για τα layers των stars */
+.stars,
+.stars2,
+.stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Πρώτο layer (λευκά, πιο “ζωντανά”) */
+.stars {
+  background: white;
+  opacity: 0.9;
+  box-shadow:
+    89vw 38vh white,
+    45vw 84vh white,
+    65vw 69vh white,
+    24vw 90vh white,
+    27vw 42vh white,
+    60vw 38vh white,
+    39vw 85vh white,
+    17vw 66vh white,
+    42vw 1vh white,
+    43vw 21vh white,
+    87vw 4vh white,
+    71vw 86vh white,
+    95vw 28vh white,
+    45vw 77vh white,
+    47vw 84vh white,
+    45vw 69vh white,
+    58vw 24vh white,
+    74vw 7vh white,
+    44vw 90vh white,
+    69vw 36vh white,
+    74vw 92vh white,
+    53vw 81vh white,
+    92vw 97vh white,
+    72vw 20vh white,
+    16vw 65vh white,
+    1vw 45vh white,
+    4vw 88vh white,
+    38vw 6vh white,
+    92vw 58vh white,
+    56vw 39vh white,
+    13vw 84vh white,
+    2vw 35vh white,
+    58vw 21vh white,
+    8vw 39vh white,
+    63vw 8vh white,
+    60vw 91vh white,
+    77vw 5vh white,
+    79vw 74vh white,
+    4vw 87vh white,
+    79vw 44vh white,
+    10vw 89vh white,
+    72vw 59vh white,
+    26vw 34vh white,
+    77vw 64vh white,
+    93vw 94vh white,
+    66vw 50vh white,
+    45vw 16vh white,
+    22vw 92vh white,
+    64vw 21vh white,
+    75vw 1vh white;
+  animation: twinkle 5s ease-in-out infinite alternate;
+}
+
+/* Δεύτερο layer (γκρι #aaa) */
+.stars2 {
+  background: #aaa;
+  opacity: 0.6;
+  box-shadow:
+    50vw 45vh #aaa,
+    31vw 14vh #aaa,
+    80vw 5vh #aaa,
+    65vw 60vh #aaa,
+    13vw 96vh #aaa,
+    79vw 3vh #aaa,
+    71vw 91vh #aaa,
+    31vw 30vh #aaa,
+    60vw 57vh #aaa,
+    99vw 83vh #aaa,
+    16vw 37vh #aaa,
+    30vw 5vh #aaa,
+    70vw 91vh #aaa,
+    11vw 9vh #aaa,
+    92vw 25vh #aaa,
+    21vw 80vh #aaa,
+    12vw 11vh #aaa,
+    35vw 63vh #aaa,
+    75vw 30vh #aaa,
+    43vw 33vh #aaa,
+    71vw 76vh #aaa,
+    99vw 45vh #aaa,
+    43vw 46vh #aaa,
+    19vw 58vh #aaa,
+    49vw 92vh #aaa,
+    45vw 84vh #aaa,
+    62vw 26vh #aaa,
+    23vw 18vh #aaa,
+    14vw 72vh #aaa,
+    41vw 69vh #aaa,
+    29vw 78vh #aaa,
+    35vw 74vh #aaa,
+    27vw 41vh #aaa,
+    15vw 10vh #aaa,
+    26vw 94vh #aaa,
+    65vw 18vh #aaa,
+    78vw 79vh #aaa,
+    41vw 71vh #aaa,
+    47vw 70vh #aaa,
+    88vw 87vh #aaa;
+  animation: twinkle 8s ease-in-out infinite alternate;
+}
+
+/* Τρίτο layer (σκούρο γκρι #555) */
+.stars3 {
+  background: #555;
+  opacity: 0.4;
+  box-shadow:
+    64vw 56vh #555,
+    38vw 98vh #555,
+    41vw 20vh #555,
+    90vw 19vh #555,
+    56vw 46vh #555,
+    34vw 53vh #555,
+    59vw 13vh #555,
+    45vw 94vh #555,
+    3vw 58vh #555,
+    80vw 84vh #555,
+    49vw 14vh #555,
+    74vw 18vh #555,
+    42vw 26vh #555,
+    17vw 88vh #555,
+    65vw 42vh #555,
+    88vw 65vh #555,
+    15vw 36vh #555,
+    30vw 91vh #555,
+    12vw 83vh #555,
+    73vw 46vh #555,
+    77vw 57vh #555,
+    21vw 39vh #555,
+    66vw 94vh #555,
+    8vw 24vh #555,
+    91vw 73vh #555,
+    19vw 16vh #555,
+    59vw 78vh #555,
+    39vw 52vh #555,
+    33vw 15vh #555,
+    83vw 49vh #555;
+  animation: twinkle 10s ease-in-out infinite alternate;
+}
+
+/* Keyframes για το twinkle effect */
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Θέση του περιεχομένου πάνω από τα stars */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}

@@ -1,0 +1,28 @@
+.code-guideline-box {
+  background: rgba(255,255,255,0.05);
+  border: 2px solid #ffe81f;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: monospace;
+  color: #fff;
+}
+
+.code-block {
+  background: #222;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.guidelines {
+  margin-top: 1rem;
+}
+
+.guidelines h3 {
+  color: #ffe81f;
+  margin-bottom: 0.5rem;
+}
+
+.guidelines ul {
+  list-style: disc inside;
+}

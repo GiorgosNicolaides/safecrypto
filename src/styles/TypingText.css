@@ -1,0 +1,10 @@
+.typing-text {
+  white-space: pre-wrap;
+  font-family: 'Arial Black', 'Impact', sans-serif;
+  font-size: 1.5rem;
+  color: #ffe81f; /* Star Wars yellow */
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
+}

@@ -1,0 +1,29 @@
+/* src/styles/Footer.css */
+
+.footer {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #2d3748;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+/* Slightly larger text for bigger screens */
+@media (min-width: 768px) {
+  .footer {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Smaller text and padding for mobile */
+@media (max-width: 480px) {
+  .footer {
+    font-size: 0.8rem;
+    padding: 0.75rem;
+  }
+}

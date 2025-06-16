@@ -1,0 +1,47 @@
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.choice-box {
+  flex: 1 1 250px;
+  max-width: 300px;
+  min-width: 220px;
+  height: 200px;
+  border: 2px solid #0077cc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.choice-box:hover {
+  background-color: #e6f2ff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 119, 204, 0.2);
+}
+
+.choice-box.left {
+  background-color: #f0faff;
+}
+
+.choice-box.right {
+  background-color: #fff0f5;
+}
+
+.choice-box.center {
+  background-color: #fefae0;
+}
+
+.choice-box h2 {
+  font-size: 1.5rem;
+  color: #333;
+  padding: 0 1rem;
+}

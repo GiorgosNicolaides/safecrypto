@@ -1,0 +1,42 @@
+.slideshow {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+    /* add horizontal padding so nav buttons are inside */
+  padding: 0 3rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.slide-container {
+  overflow: hidden;
+}
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #ffe81f;
+  font-size: 2rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.prev { left: 0; }
+.next { right: 0; }
+.dots {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #555;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.dot.active {
+  background: #ffe81f;
+}

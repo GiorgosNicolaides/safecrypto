@@ -1,0 +1,21 @@
+.do-dont-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.do-column,
+.dont-column {
+  flex: 1 1 300px;   /* min-width: 300px, grow */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Stack on narrow screens */
+@media (max-width: 768px) {
+  .do-dont-container {
+    flex-direction: column;
+  }
+}

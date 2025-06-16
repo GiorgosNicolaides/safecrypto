@@ -1,0 +1,15 @@
+.avoid-list {
+  background: rgba(255,0,0,0.05);
+  border: 2px solid #f00;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+}
+
+.avoid-list h3 {
+  margin-bottom: 0.5rem;
+}
+
+.avoid-list ul {
+  list-style: disc inside;
+}
