@@ -96,6 +96,7 @@ export default function App() {
     
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/safecrypto" element={<Home />} />
       
       <Route path="/encryption" element={<Encryption />} />
       <Route path="/encryption/weak-encryption" element={<WeakEncryption />} />
