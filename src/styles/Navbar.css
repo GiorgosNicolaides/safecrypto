@@ -1,19 +1,23 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: black;
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(255, 255, 0, 0.1);
+  position: relative;
 }
 
 .navbar-left {
-  flex: 1;
+  flex: 0;
 }
 
-.navbar-right {
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 1.5rem;
-  justify-content: center;
-  flex: 1;
 }
 
 .logo-button {
@@ -25,7 +29,7 @@
   cursor: pointer;
 }
 
-.navbar-right button {
+.navbar-center button {
   background: none;
   border: none;
   color: yellow;
@@ -34,6 +38,6 @@
   transition: text-decoration 0.2s;
 }
 
-.navbar-right button:hover {
+.navbar-center button:hover {
   text-decoration: underline;
 }

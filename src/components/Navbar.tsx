@@ -7,7 +7,7 @@ export default function Navbar() {
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
-    navigate('/safecrypto/');
+    navigate('/');
   };
 
   const handleNavClick = (path: string) => {
@@ -15,23 +15,23 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar">
-      <div className="navbar-left">
-        <button
-          className="logo-button"
-          aria-label="Go to homepage"
-          onClick={handleLogoClick}
-        >
-          🛡️ CodeGuard
-        </button>
-      </div>
+  <nav className="navbar">
+  <div className="navbar-left">
+    <button
+      className="logo-button"
+      onClick={handleLogoClick}
+      aria-label="Go to homepage"
+    >
+      CodeGuard
+    </button>
+  </div>
 
-      <div className="navbar-right">
-        <button onClick={() => handleNavClick('/cwe-examples')}>CWE Examples</button>
-        <button onClick={() => handleNavClick('/info')}>Info</button>
-        <button onClick={() => handleNavClick('/tools')}>Tools</button>
-        <button onClick={() => handleNavClick('/docs')}>Docs</button>
-      </div>
-    </nav>
+  <div className="navbar-center">
+    <button onClick={() => handleNavClick('/cwe-examples')}>Examples</button>
+    <button onClick={() => handleNavClick('/info')}>Info</button>
+    <button onClick={() => handleNavClick('/tools')}>Tools</button>
+    <button onClick={() => handleNavClick('/docs')}>Docs</button>
+  </div>
+</nav>
   );
 }
