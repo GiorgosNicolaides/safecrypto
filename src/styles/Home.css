@@ -223,7 +223,7 @@
 .covsaw-logo {
   width: 400px;
   max-width: 60vw;
-  opacity: 0;
+  opacity: 1;
   animation: fadeInLogo 2s ease forwards;
 }
 
