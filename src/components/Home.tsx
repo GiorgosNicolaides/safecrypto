@@ -1,7 +1,7 @@
 // src/components/Home.tsx
 import React, { useEffect, useState } from 'react';
 import '../styles/Home.css';
-import covsawLogo from '../assets/COVSAW.png'; 
+import covsawLogo from '../assets/COVSAW-removebg-preview.png'; 
 
 export default function Home() {
   const [showLogo, setShowLogo] = useState(false);
