@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLogo(true);
-    }, 30000); 
+    }, 300000); 
 
     return () => clearTimeout(timer);
   }, []);
