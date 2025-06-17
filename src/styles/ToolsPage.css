@@ -1,0 +1,48 @@
+.tools-page {
+  color: yellow;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
+  background-color: transparent;
+}
+
+.tools-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tool-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: scale(1.03);
+}
+
+.tool-card h2 {
+  margin-top: 0;
+  color: #ffcc00;
+}
+
+.tool-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: yellow;
+  text-decoration: underline;
+}
+
+.tool-card a:hover {
+  color: #ffd700;
+}

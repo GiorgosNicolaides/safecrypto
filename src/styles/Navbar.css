@@ -1,113 +1,39 @@
-/* src/styles/Navbar.css */
-
 .navbar {
-  background-color: #0d1117;
-  color: #c9d1d9;
-  display: flex;
   align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 0, 0.1);
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 1.5rem;
   justify-content: center;
-  padding: 0.75rem 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid #2d3748;
-  flex-wrap: wrap;
+  flex: 1;
 }
 
 .logo-button {
-  all: unset;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #00e0ff;
-  text-shadow: 0 0 8px rgba(0, 224, 255, 0.5);
-  background-color: transparent;
-  backdrop-filter: blur(2px);
-  cursor: pointer;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.logo-button:hover {
-  opacity: 0.8;
-  transform: scale(1.03);
-}
-
-.navbar-title {
-  position: absolute;
-  left: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #00e0ff;
-  text-shadow: 0 0 5px #00e0ff;
-  white-space: nowrap;
-}
-
-/* Burger button */
-.burger {
-  display: none;
-  position: absolute;
-  right: 1rem;
   background: none;
   border: none;
-  color: white;
-  font-size: 1.5rem;
+  color: yellow;
+  font-size: 1.2rem;
+  font-weight: bold;
   cursor: pointer;
-  z-index: 110;
 }
 
-/* Nav links */
-.navbar-links {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-  overflow: hidden;
-}
-
-.navbar-links li button {
-  all: unset; /* removes all default button styles */
-  color: #c9d1d9;
-  font-size: 0.9rem;
-  white-space: nowrap;
+.navbar-right button {
+  background: none;
+  border: none;
+  color: yellow;
+  font-size: 1rem;
   cursor: pointer;
-  padding: 0.25rem 0.5rem;
-  transition: color 0.2s ease;
+  transition: text-decoration 0.2s;
 }
 
-.navbar-links li button:hover {
-  color: #00e0ff;
-}
-
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .burger {
-    display: block;
-  }
-
-  .navbar-links {
-    flex-direction: column;
-    width: 100%;
-    max-height: 0;
-    opacity: 0;
-    background-color: #0d1117;
-    padding: 0;
-    margin-top: 3rem;
-    align-items: center;
-  }
-
-  .navbar-links.open {
-    max-height: 500px; /* enough to show all links */
-    opacity: 1;
-    padding: 1rem 0;
-  }
-
-  .navbar-links li {
-    margin: 0.5rem 0;
-  }
-
-  
+.navbar-right button:hover {
+  text-decoration: underline;
 }

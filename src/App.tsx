@@ -88,15 +88,23 @@ import CWE349 from './pages/cwes/CWE349';
 import CWE757 from './pages/cwes/CWE757';
 import CWE780 from './pages/cwes/CWE780';
 
-
-
+import CWEPage from './pages/CWEPage';
+import InfoPage from './pages/InfoPage';
+import ToolsPage from './pages/ToolsPage';
+import DocsPage from './pages/DocsPages';
 
 export default function App() {
   return (
     
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/safecrypto/" element={<Home />} />
+
+      <Route path="/cwe-examples" element={<CWEPage />} />
+      <Route path="/info" element={<InfoPage />} />
+      <Route path="/tools" element={<ToolsPage />} />
+      <Route path="/docs" element={<DocsPage />} />
+
+      {/* Cryptography-related routes */}
       
       <Route path="/encryption" element={<Encryption />} />
       <Route path="/encryption/weak-encryption" element={<WeakEncryption />} />
