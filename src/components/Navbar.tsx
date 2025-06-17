@@ -26,7 +26,7 @@ export default function Navbar() {
 
   const handleLogoClick = () => {
     setIsOpen(false);
-    navigate('/');
+    navigate('/safecrypto/');
   };
 
   
