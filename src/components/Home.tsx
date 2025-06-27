@@ -22,13 +22,26 @@ export default function Home() {
 
       <div className="star-wars">
         <div className="crawl">
-          <h1>A Thesis By George Nicolaides</h1>
-          <p>Classification of Cryptographic Vulnerabilities and Security Assessment of Web Applications.</p>
-          <p>This project explores cryptographic flaws through CWEs and offers practical examples of secure Python coding. Its goal is to raise awareness and improve the security of modern web applications.</p>
-          <p>The project is structured around a series of categories, each addressing specific cryptographic vulnerabilities and their mitigations.</p>
-          <p>The categories include Encryption and Transmission Issues, Key and Credential Management, Randomness and Entropy Issues, Certificate and Trust Chain Weaknesses, Sensitive Information Exposure, Authentication and Access Control, Data Integrity and Tampering Protections, Algorithm Selection and Negotiation Weaknesses, Device and Hardware-Level Weaknesses, and Cryptographic Implementation Issues.</p>
-          <p>Each category provides a detailed overview of the vulnerabilities, their potential impact, and practical examples of secure coding practices in Python.</p>
-          <p>The project is available on GitHub, where you can explore the code, examples, and detailed explanations of each category.</p>
+          <h1>A Thesis by George Nicolaides</h1>
+          <p>
+  <strong>Classification of Cryptographic Vulnerabilities and Security Assessment of Web Applications</strong>
+</p>
+<p>
+  This project systematically explores cryptographic weaknesses through the lens of CWE (Common Weakness Enumeration) and provides practical examples of secure Python coding. The core aim is to raise awareness and improve the security posture of modern web applications.
+</p>
+<p>
+  The content is organized into key categories, each addressing a specific class of cryptographic vulnerabilities and effective mitigation strategies.
+</p>
+<p>
+  Topics covered include Encryption and Transmission Issues, Key and Credential Management, Randomness and Entropy, Certificate and Trust Chain Weaknesses, Sensitive Data Exposure, Authentication and Access Control, Data Integrity, Algorithm Selection, Device and Hardware Security, and Cryptographic Implementation Pitfalls.
+</p>
+<p>
+  Each section features detailed explanations, real-world impact analysis, and hands-on Python code samples illustrating both insecure patterns and best practices.
+</p>
+<p>
+  The full project—including source code, example cases, and further documentation—is available on <a href="https://github.com/GiorgosNicolaides/safecrypto" target="_blank" rel="noopener">GitHub</a>.
+</p>
+
         </div>
       </div>
 
